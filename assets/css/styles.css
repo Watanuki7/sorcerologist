@@ -1,0 +1,62 @@
+.cormorant-unicase-light {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-unicase-regular {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-unicase-medium {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-unicase-semibold {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-unicase-bold {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.metamorphous-regular {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.macondo-regular {
+  font-family: "Macondo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-sorce{
+  background-color: #482c8f;
+}
+
+a:visited {
+  color: inherit; /* Keeps the text the same color as unvisited links */
+  text-decoration: none; /* Optional: Remove underline if present */
+}
+
+body {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
