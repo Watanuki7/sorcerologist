@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarContainer = document.getElementById('navbar-container');
 
     // Fetch the navbar HTML content
-    fetch('navbar.html')
+    fetch('components/navbar.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
