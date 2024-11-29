@@ -26,3 +26,27 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error loading navbar:', error);
     });
 });
+
+document.querySelectorAll('.ripple-container').forEach(container => {
+    container.addEventListener('click', function (e) {
+        const rect = container.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height); // Ripple will be square and cover the largest side
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        // Create the ripple element
+        const ripple = document.createElement('span');
+        ripple.style.width = ripple.style.height = `${size}px`;
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+        ripple.classList.add('ripple');
+
+        // Append the ripple to the container
+        container.appendChild(ripple);
+
+        // Remove ripple after animation ends
+        ripple.addEventListener('animationend', () => {
+            ripple.remove();
+        });
+    });
+});

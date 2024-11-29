@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* start of fonts */
+
 .cormorant-unicase-light {
   font-family: "Cormorant Unicase", serif;
   font-weight: 300;
@@ -46,9 +54,9 @@
   font-style: normal;
 }
 
-.bg-sorce{
-  background-color: #482c8f;
-}
+/* end of fonts */
+
+/* start of html stuff */
 
 a:visited {
   color: inherit; /* Keeps the text the same color as unvisited links */
@@ -60,3 +68,107 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+nav {
+  position: fixed; /* Keeps the navbar fixed to the viewport */
+  top: 0; /* Aligns the navbar to the top of the viewport */
+  left: 0; /* Aligns the navbar to the left of the viewport */
+  width: 100%; /* Makes the navbar span the entire width */
+  background-color: #333; /* Example background color */
+  color: white; /* Example text color */
+  padding: 10px 20px; /* Adds some padding */
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+}
+
+.footer {
+  flex-shrink: 0; /* Prevents footer from shrinking */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #333; /* Adjust footer background */
+  color: #fff; /* Adjust footer text color */
+}
+
+/* end of html stuff */
+
+/* start of ripple effect classes */
+
+.ripple-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ripple-container .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(0);
+  animation: ripple-animation 1s linear;
+}
+
+@keyframes ripple-animation {
+  to {
+      transform: scale(4);
+      opacity: 0;
+  }
+}
+
+/* end of ripple effect classes */
+
+.bg-sorce{
+  background-color: #482c8f;
+}
+
+.header {
+  background-image: url('../img/background.png'); /* Path to your local image */
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.below-content {
+  background-image: url('../img/background.png'); /* Path to your local image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.box {
+  height:  100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-title{
+  font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+  .main-title {
+    font-size: 3rem; /* Smaller font size on small screens */
+  }
+}
+
+.test1{
+  background-color: greenyellow;
+}
+
+.test2{
+  background-color: magenta;
+}
+
+.test3{
+  background-color: yellow;
+}
+
+.test4{
+  background-color: blueviolet;
+}
+
