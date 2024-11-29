@@ -50,3 +50,7 @@ document.querySelectorAll('.ripple-container').forEach(container => {
         });
     });
 });
+
+document.getElementById('scroll-btn').addEventListener('click', () => {
+    document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });
+  });
