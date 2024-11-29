@@ -93,7 +93,7 @@ nav {
 
 .ripple-container {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   overflow: hidden;
 }
@@ -101,7 +101,7 @@ nav {
 .ripple-container .ripple {
   position: absolute;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(98, 18, 255, 0.3);
   transform: scale(0);
   animation: ripple-animation 1s linear;
 }
