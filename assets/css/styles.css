@@ -115,62 +115,7 @@ nav {
 
 /* end of ripple effect classes */
 
-.bg-sorce{
-  background-color: #482c8f;
-}
-
-.header {
-  background-image: url('../img/background.png'); /* Path to your local image */
-  height: 100vh; /* Full viewport height */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed;
-  color: #ffffff;
-}
-
-.below-content {
-  background-image: url('../img/background.png'); /* Path to your local image */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed;
-  color: #ffffff;
-  flex-grow: 1;
-}
-
-.box {
-  height:  100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.main-title{
-  font-size: 4rem;
-}
-
-@media (max-width: 640px) {
-  .main-title {
-    font-size: 3rem; /* Smaller font size on small screens */
-  }
-}
-
-.test1{
-  background-color: greenyellow;
-}
-
-.test2{
-  background-color: magenta;
-}
-
-.test3{
-  background-color: yellow;
-}
-
-.test4{
-  background-color: blueviolet;
-}
+/* start of aspect ratios */
 
 .aspect-16-9 {
   height: 0;
@@ -220,4 +165,56 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* end of aspect ratios */
+
+.bg-sorce{
+  background-color: #482c8f;
+}
+
+.header {
+  background-image: url('../img/background.png'); /* Path to your local image */
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.below-content {
+  background-image: url('../img/background.png'); /* Path to your local image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.box {
+  height:  100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-title{
+  font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+  .main-title {
+    font-size: 3rem; /* Smaller font size on small screens */
+  }
+}
+
+.home-button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
